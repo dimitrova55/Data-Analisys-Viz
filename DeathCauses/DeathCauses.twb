@@ -1,0 +1,1520 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xml:base='https://localhost' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://vizhub/workbooks/CausesofDeatharounttheWorld?rev=1.0' id='CausesofDeatharounttheWorld' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Pareto Adjustment' datatype='real' default-format='p0%' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='0.7'>
+        <calculation class='tableau' formula='0.7' />
+      </column>
+    </datasource>
+    <datasource caption='annual-number-of-deaths-by-cause' inline='true' name='federated.1vperxc1hjvgn612cy2f9038snnc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='annual-number-of-deaths-by-cause' name='textscan.12s5781107un6c11cribp0e23w7x'>
+            <connection class='textscan' directory='C:/Users/user/Downloads/Data Analisys&amp;Visualization' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Deaths - Acute hepatitis - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Alcohol use disorders - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Alzheimer&apos;s disease and other dementias - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Cardiovascular diseases - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Chronic kidney disease - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Chronic respiratory diseases - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Cirrhosis and other chronic liver diseases - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Conflict and terrorism - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Diabetes mellitus - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Diarrheal diseases - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Digestive diseases - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Drowning - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Drug use disorders - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Environmental heat and cold exposure - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Exposure to forces of nature - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Fire, heat, and hot substances - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - HIV/AIDS - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Interpersonal violence - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Lower respiratory infections - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Malaria - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Maternal disorders - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Meningitis - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Neonatal disorders - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Neoplasms - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Nutritional deficiencies - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Parkinson&apos;s disease - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Poisonings - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Protein-energy malnutrition - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Road injuries - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Self-harm - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Tuberculosis - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Number of executions (Amnesty International)]' />
+            <value name='[Terrorism (deaths)]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Acute hepatitis - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Alcohol use disorders - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Alzheimer&apos;s disease and other dementias - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Cardiovascular diseases - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Chronic kidney disease - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Chronic respiratory diseases - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Cirrhosis and other chronic liver diseases - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Conflict and terrorism - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Diabetes mellitus - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Diarrheal diseases - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Digestive diseases - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Drowning - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Drug use disorders - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Environmental heat and cold exposure - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Exposure to forces of nature - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Fire, heat, and hot substances - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - HIV/AIDS - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Interpersonal violence - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Lower respiratory infections - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Malaria - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Maternal disorders - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Meningitis - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Neonatal disorders - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Neoplasms - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Nutritional deficiencies - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Parkinson&apos;s disease - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Poisonings - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Protein-energy malnutrition - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Road injuries - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Self-harm - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Tuberculosis - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Number of executions (Amnesty International)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Terrorism (deaths)]' />
+            </group>
+          </groups>
+          <relation connection='textscan.12s5781107un6c11cribp0e23w7x' name='annual-number-of-deaths-by-cause.csv' table='[annual-number-of-deaths-by-cause#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='bg_BG' separator=','>
+              <column datatype='string' name='Entity' ordinal='0' />
+              <column datatype='string' name='Code' ordinal='1' />
+              <column datatype='integer' name='Year' ordinal='2' />
+              <column datatype='integer' name='Number of executions (Amnesty International)' ordinal='3' />
+              <column datatype='integer' name='Deaths - Meningitis - Sex: Both - Age: All Ages (Number)' ordinal='4' />
+              <column datatype='integer' name='Deaths - Neoplasms - Sex: Both - Age: All Ages (Number)' ordinal='5' />
+              <column datatype='integer' name='Deaths - Fire, heat, and hot substances - Sex: Both - Age: All Ages (Number)' ordinal='6' />
+              <column datatype='integer' name='Deaths - Malaria - Sex: Both - Age: All Ages (Number)' ordinal='7' />
+              <column datatype='integer' name='Deaths - Drowning - Sex: Both - Age: All Ages (Number)' ordinal='8' />
+              <column datatype='integer' name='Deaths - Interpersonal violence - Sex: Both - Age: All Ages (Number)' ordinal='9' />
+              <column datatype='integer' name='Deaths - HIV/AIDS - Sex: Both - Age: All Ages (Number)' ordinal='10' />
+              <column datatype='integer' name='Deaths - Drug use disorders - Sex: Both - Age: All Ages (Number)' ordinal='11' />
+              <column datatype='integer' name='Deaths - Tuberculosis - Sex: Both - Age: All Ages (Number)' ordinal='12' />
+              <column datatype='integer' name='Deaths - Road injuries - Sex: Both - Age: All Ages (Number)' ordinal='13' />
+              <column datatype='integer' name='Deaths - Maternal disorders - Sex: Both - Age: All Ages (Number)' ordinal='14' />
+              <column datatype='integer' name='Deaths - Lower respiratory infections - Sex: Both - Age: All Ages (Number)' ordinal='15' />
+              <column datatype='integer' name='Deaths - Neonatal disorders - Sex: Both - Age: All Ages (Number)' ordinal='16' />
+              <column datatype='integer' name='Deaths - Alcohol use disorders - Sex: Both - Age: All Ages (Number)' ordinal='17' />
+              <column datatype='integer' name='Deaths - Exposure to forces of nature - Sex: Both - Age: All Ages (Number)' ordinal='18' />
+              <column datatype='integer' name='Deaths - Diarrheal diseases - Sex: Both - Age: All Ages (Number)' ordinal='19' />
+              <column datatype='integer' name='Deaths - Environmental heat and cold exposure - Sex: Both - Age: All Ages (Number)' ordinal='20' />
+              <column datatype='integer' name='Deaths - Nutritional deficiencies - Sex: Both - Age: All Ages (Number)' ordinal='21' />
+              <column datatype='integer' name='Deaths - Self-harm - Sex: Both - Age: All Ages (Number)' ordinal='22' />
+              <column datatype='integer' name='Deaths - Conflict and terrorism - Sex: Both - Age: All Ages (Number)' ordinal='23' />
+              <column datatype='integer' name='Deaths - Diabetes mellitus - Sex: Both - Age: All Ages (Number)' ordinal='24' />
+              <column datatype='integer' name='Deaths - Poisonings - Sex: Both - Age: All Ages (Number)' ordinal='25' />
+              <column datatype='integer' name='Deaths - Protein-energy malnutrition - Sex: Both - Age: All Ages (Number)' ordinal='26' />
+              <column datatype='integer' name='Terrorism (deaths)' ordinal='27' />
+              <column datatype='integer' name='Deaths - Cardiovascular diseases - Sex: Both - Age: All Ages (Number)' ordinal='28' />
+              <column datatype='integer' name='Deaths - Chronic kidney disease - Sex: Both - Age: All Ages (Number)' ordinal='29' />
+              <column datatype='integer' name='Deaths - Chronic respiratory diseases - Sex: Both - Age: All Ages (Number)' ordinal='30' />
+              <column datatype='integer' name='Deaths - Cirrhosis and other chronic liver diseases - Sex: Both - Age: All Ages (Number)' ordinal='31' />
+              <column datatype='integer' name='Deaths - Digestive diseases - Sex: Both - Age: All Ages (Number)' ordinal='32' />
+              <column datatype='integer' name='Deaths - Acute hepatitis - Sex: Both - Age: All Ages (Number)' ordinal='33' />
+              <column datatype='integer' name='Deaths - Alzheimer&apos;s disease and other dementias - Sex: Both - Age: All Ages (Number)' ordinal='34' />
+              <column datatype='integer' name='Deaths - Parkinson&apos;s disease - Sex: Both - Age: All Ages (Number)' ordinal='35' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Deaths - Acute hepatitis - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Alcohol use disorders - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Alzheimer&apos;s disease and other dementias - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Cardiovascular diseases - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Chronic kidney disease - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Chronic respiratory diseases - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Cirrhosis and other chronic liver diseases - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Conflict and terrorism - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Diabetes mellitus - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Diarrheal diseases - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Digestive diseases - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Drowning - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Drug use disorders - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Environmental heat and cold exposure - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Exposure to forces of nature - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Fire, heat, and hot substances - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - HIV/AIDS - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Interpersonal violence - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Lower respiratory infections - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Malaria - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Maternal disorders - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Meningitis - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Neonatal disorders - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Neoplasms - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Nutritional deficiencies - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Parkinson&apos;s disease - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Poisonings - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Protein-energy malnutrition - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Road injuries - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Self-harm - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Deaths - Tuberculosis - Sex: Both - Age: All Ages (Number)]' />
+            <value name='[Number of executions (Amnesty International)]' />
+            <value name='[Terrorism (deaths)]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Acute hepatitis - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Alcohol use disorders - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Alzheimer&apos;s disease and other dementias - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Cardiovascular diseases - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Chronic kidney disease - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Chronic respiratory diseases - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Cirrhosis and other chronic liver diseases - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Conflict and terrorism - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Diabetes mellitus - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Diarrheal diseases - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Digestive diseases - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Drowning - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Drug use disorders - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Environmental heat and cold exposure - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Exposure to forces of nature - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Fire, heat, and hot substances - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - HIV/AIDS - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Interpersonal violence - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Lower respiratory infections - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Malaria - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Maternal disorders - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Meningitis - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Neonatal disorders - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Neoplasms - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Nutritional deficiencies - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Parkinson&apos;s disease - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Poisonings - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Protein-energy malnutrition - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Road injuries - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Self-harm - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Tuberculosis - Sex: Both - Age: All Ages (Number)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Number of executions (Amnesty International)]' />
+              <field name='[annual-number-of-deaths-by-cause.csv].[Terrorism (deaths)]' />
+            </group>
+          </groups>
+          <relation connection='textscan.12s5781107un6c11cribp0e23w7x' name='annual-number-of-deaths-by-cause.csv' table='[annual-number-of-deaths-by-cause#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='bg_BG' separator=','>
+              <column datatype='string' name='Entity' ordinal='0' />
+              <column datatype='string' name='Code' ordinal='1' />
+              <column datatype='integer' name='Year' ordinal='2' />
+              <column datatype='integer' name='Number of executions (Amnesty International)' ordinal='3' />
+              <column datatype='integer' name='Deaths - Meningitis - Sex: Both - Age: All Ages (Number)' ordinal='4' />
+              <column datatype='integer' name='Deaths - Neoplasms - Sex: Both - Age: All Ages (Number)' ordinal='5' />
+              <column datatype='integer' name='Deaths - Fire, heat, and hot substances - Sex: Both - Age: All Ages (Number)' ordinal='6' />
+              <column datatype='integer' name='Deaths - Malaria - Sex: Both - Age: All Ages (Number)' ordinal='7' />
+              <column datatype='integer' name='Deaths - Drowning - Sex: Both - Age: All Ages (Number)' ordinal='8' />
+              <column datatype='integer' name='Deaths - Interpersonal violence - Sex: Both - Age: All Ages (Number)' ordinal='9' />
+              <column datatype='integer' name='Deaths - HIV/AIDS - Sex: Both - Age: All Ages (Number)' ordinal='10' />
+              <column datatype='integer' name='Deaths - Drug use disorders - Sex: Both - Age: All Ages (Number)' ordinal='11' />
+              <column datatype='integer' name='Deaths - Tuberculosis - Sex: Both - Age: All Ages (Number)' ordinal='12' />
+              <column datatype='integer' name='Deaths - Road injuries - Sex: Both - Age: All Ages (Number)' ordinal='13' />
+              <column datatype='integer' name='Deaths - Maternal disorders - Sex: Both - Age: All Ages (Number)' ordinal='14' />
+              <column datatype='integer' name='Deaths - Lower respiratory infections - Sex: Both - Age: All Ages (Number)' ordinal='15' />
+              <column datatype='integer' name='Deaths - Neonatal disorders - Sex: Both - Age: All Ages (Number)' ordinal='16' />
+              <column datatype='integer' name='Deaths - Alcohol use disorders - Sex: Both - Age: All Ages (Number)' ordinal='17' />
+              <column datatype='integer' name='Deaths - Exposure to forces of nature - Sex: Both - Age: All Ages (Number)' ordinal='18' />
+              <column datatype='integer' name='Deaths - Diarrheal diseases - Sex: Both - Age: All Ages (Number)' ordinal='19' />
+              <column datatype='integer' name='Deaths - Environmental heat and cold exposure - Sex: Both - Age: All Ages (Number)' ordinal='20' />
+              <column datatype='integer' name='Deaths - Nutritional deficiencies - Sex: Both - Age: All Ages (Number)' ordinal='21' />
+              <column datatype='integer' name='Deaths - Self-harm - Sex: Both - Age: All Ages (Number)' ordinal='22' />
+              <column datatype='integer' name='Deaths - Conflict and terrorism - Sex: Both - Age: All Ages (Number)' ordinal='23' />
+              <column datatype='integer' name='Deaths - Diabetes mellitus - Sex: Both - Age: All Ages (Number)' ordinal='24' />
+              <column datatype='integer' name='Deaths - Poisonings - Sex: Both - Age: All Ages (Number)' ordinal='25' />
+              <column datatype='integer' name='Deaths - Protein-energy malnutrition - Sex: Both - Age: All Ages (Number)' ordinal='26' />
+              <column datatype='integer' name='Terrorism (deaths)' ordinal='27' />
+              <column datatype='integer' name='Deaths - Cardiovascular diseases - Sex: Both - Age: All Ages (Number)' ordinal='28' />
+              <column datatype='integer' name='Deaths - Chronic kidney disease - Sex: Both - Age: All Ages (Number)' ordinal='29' />
+              <column datatype='integer' name='Deaths - Chronic respiratory diseases - Sex: Both - Age: All Ages (Number)' ordinal='30' />
+              <column datatype='integer' name='Deaths - Cirrhosis and other chronic liver diseases - Sex: Both - Age: All Ages (Number)' ordinal='31' />
+              <column datatype='integer' name='Deaths - Digestive diseases - Sex: Both - Age: All Ages (Number)' ordinal='32' />
+              <column datatype='integer' name='Deaths - Acute hepatitis - Sex: Both - Age: All Ages (Number)' ordinal='33' />
+              <column datatype='integer' name='Deaths - Alzheimer&apos;s disease and other dementias - Sex: Both - Age: All Ages (Number)' ordinal='34' />
+              <column datatype='integer' name='Deaths - Parkinson&apos;s disease - Sex: Both - Age: All Ages (Number)' ordinal='35' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;лв.&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;bg_BG&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Entity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Entity]</local-name>
+            <parent-name>[annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Entity</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-number-of-deaths-by-cause.csv_87B8A47F009F45B790706A3769BD0CC7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Code]</local-name>
+            <parent-name>[annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-number-of-deaths-by-cause.csv_87B8A47F009F45B790706A3769BD0CC7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[annual-number-of-deaths-by-cause.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-number-of-deaths-by-cause.csv_87B8A47F009F45B790706A3769BD0CC7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-number-of-deaths-by-cause.csv_87B8A47F009F45B790706A3769BD0CC7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-number-of-deaths-by-cause.csv_87B8A47F009F45B790706A3769BD0CC7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Cumulative %' datatype='real' default-format='p0.00%' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RUNNING_SUM(SUM([Pivot Field Values])) / TOTAL(SUM([Pivot Field Values]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Pareto Filter' datatype='boolean' name='[Calculation_1126744357916725252]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='[Calculation1] &lt;= [Parameters].[Parameter 1]'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='% Contribution' datatype='real' name='[Calculation_1126744357921943558]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum([Pivot Field Values]) / TOTAL(SUM([Pivot Field Values]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Area' datatype='string' name='[Entity]' role='dimension' type='nominal' />
+      <column caption='Pareto Coloration' datatype='integer' name='[Pareto Filter (copy)_1126744357921251333]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='if [Calculation1] &lt;= [Parameters].[Parameter 1] then 1 else 0 end'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Causes of Death' datatype='string' name='[Pivot Field Names (copy)_1126744357903114240]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='REPLACE(REPLACE([Pivot Field Names], &apos;Deaths -&apos;, &apos;&apos;), &apos;- Sex: Both - Age: All Ages (Number)&apos;, &apos;&apos;)' />
+      </column>
+      <column caption='Death number' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='annual-number-of-deaths-by-cause.csv' datatype='table' name='[__tableau_internal_object_id__].[annual-number-of-deaths-by-cause.csv_87B8A47F009F45B790706A3769BD0CC7]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/user/Documents/내 Tableau 리포지토리/통합 문서/DeathCauses.twb Files/Data/TableauTemp/#TableauTemp_1jxhskz084q55q12zgwo40cd5h6w.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/06/2024 06:37:42 AM' username=''>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Entity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Entity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Entity</remote-alias>
+              <ordinal>0</ordinal>
+              <family>annual-number-of-deaths-by-cause.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>453</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-number-of-deaths-by-cause.csv_87B8A47F009F45B790706A3769BD0CC7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Code</remote-alias>
+              <ordinal>1</ordinal>
+              <family>annual-number-of-deaths-by-cause.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>347</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-number-of-deaths-by-cause.csv_87B8A47F009F45B790706A3769BD0CC7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>annual-number-of-deaths-by-cause.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-number-of-deaths-by-cause.csv_87B8A47F009F45B790706A3769BD0CC7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Names</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Pivot</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-number-of-deaths-by-cause.csv_87B8A47F009F45B790706A3769BD0CC7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Values</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Pivot Field Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Values</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Pivot</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23571</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[annual-number-of-deaths-by-cause.csv_87B8A47F009F45B790706A3769BD0CC7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Bulgaria&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Pareto Adjustment' datatype='real' default-format='p0%' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='0.7'>
+          <calculation class='tableau' formula='0.7' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='annual-number-of-deaths-by-cause.csv' id='annual-number-of-deaths-by-cause.csv_87B8A47F009F45B790706A3769BD0CC7'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='integer' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[Deaths - Acute hepatitis - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Alcohol use disorders - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Alzheimer&apos;s disease and other dementias - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Cardiovascular diseases - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Chronic kidney disease - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Chronic respiratory diseases - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Cirrhosis and other chronic liver diseases - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Conflict and terrorism - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Diabetes mellitus - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Diarrheal diseases - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Digestive diseases - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Drowning - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Drug use disorders - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Environmental heat and cold exposure - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Exposure to forces of nature - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Fire, heat, and hot substances - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - HIV/AIDS - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Interpersonal violence - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Lower respiratory infections - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Malaria - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Maternal disorders - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Meningitis - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Neonatal disorders - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Neoplasms - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Nutritional deficiencies - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Parkinson&apos;s disease - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Poisonings - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Protein-energy malnutrition - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Road injuries - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Self-harm - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Deaths - Tuberculosis - Sex: Both - Age: All Ages (Number)]' />
+                  <value name='[Number of executions (Amnesty International)]' />
+                  <value name='[Terrorism (deaths)]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Acute hepatitis - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Alcohol use disorders - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Alzheimer&apos;s disease and other dementias - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Cardiovascular diseases - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Chronic kidney disease - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Chronic respiratory diseases - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Cirrhosis and other chronic liver diseases - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Conflict and terrorism - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Diabetes mellitus - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Diarrheal diseases - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Digestive diseases - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Drowning - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Drug use disorders - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Environmental heat and cold exposure - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Exposure to forces of nature - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Fire, heat, and hot substances - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - HIV/AIDS - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Interpersonal violence - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Lower respiratory infections - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Malaria - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Maternal disorders - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Meningitis - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Neonatal disorders - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Neoplasms - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Nutritional deficiencies - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Parkinson&apos;s disease - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Poisonings - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Protein-energy malnutrition - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Road injuries - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Self-harm - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Deaths - Tuberculosis - Sex: Both - Age: All Ages (Number)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Number of executions (Amnesty International)]' />
+                    <field name='[annual-number-of-deaths-by-cause.csv].[Terrorism (deaths)]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.12s5781107un6c11cribp0e23w7x' name='annual-number-of-deaths-by-cause.csv' table='[annual-number-of-deaths-by-cause#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='bg_BG' separator=','>
+                    <column datatype='string' name='Entity' ordinal='0' />
+                    <column datatype='string' name='Code' ordinal='1' />
+                    <column datatype='integer' name='Year' ordinal='2' />
+                    <column datatype='integer' name='Number of executions (Amnesty International)' ordinal='3' />
+                    <column datatype='integer' name='Deaths - Meningitis - Sex: Both - Age: All Ages (Number)' ordinal='4' />
+                    <column datatype='integer' name='Deaths - Neoplasms - Sex: Both - Age: All Ages (Number)' ordinal='5' />
+                    <column datatype='integer' name='Deaths - Fire, heat, and hot substances - Sex: Both - Age: All Ages (Number)' ordinal='6' />
+                    <column datatype='integer' name='Deaths - Malaria - Sex: Both - Age: All Ages (Number)' ordinal='7' />
+                    <column datatype='integer' name='Deaths - Drowning - Sex: Both - Age: All Ages (Number)' ordinal='8' />
+                    <column datatype='integer' name='Deaths - Interpersonal violence - Sex: Both - Age: All Ages (Number)' ordinal='9' />
+                    <column datatype='integer' name='Deaths - HIV/AIDS - Sex: Both - Age: All Ages (Number)' ordinal='10' />
+                    <column datatype='integer' name='Deaths - Drug use disorders - Sex: Both - Age: All Ages (Number)' ordinal='11' />
+                    <column datatype='integer' name='Deaths - Tuberculosis - Sex: Both - Age: All Ages (Number)' ordinal='12' />
+                    <column datatype='integer' name='Deaths - Road injuries - Sex: Both - Age: All Ages (Number)' ordinal='13' />
+                    <column datatype='integer' name='Deaths - Maternal disorders - Sex: Both - Age: All Ages (Number)' ordinal='14' />
+                    <column datatype='integer' name='Deaths - Lower respiratory infections - Sex: Both - Age: All Ages (Number)' ordinal='15' />
+                    <column datatype='integer' name='Deaths - Neonatal disorders - Sex: Both - Age: All Ages (Number)' ordinal='16' />
+                    <column datatype='integer' name='Deaths - Alcohol use disorders - Sex: Both - Age: All Ages (Number)' ordinal='17' />
+                    <column datatype='integer' name='Deaths - Exposure to forces of nature - Sex: Both - Age: All Ages (Number)' ordinal='18' />
+                    <column datatype='integer' name='Deaths - Diarrheal diseases - Sex: Both - Age: All Ages (Number)' ordinal='19' />
+                    <column datatype='integer' name='Deaths - Environmental heat and cold exposure - Sex: Both - Age: All Ages (Number)' ordinal='20' />
+                    <column datatype='integer' name='Deaths - Nutritional deficiencies - Sex: Both - Age: All Ages (Number)' ordinal='21' />
+                    <column datatype='integer' name='Deaths - Self-harm - Sex: Both - Age: All Ages (Number)' ordinal='22' />
+                    <column datatype='integer' name='Deaths - Conflict and terrorism - Sex: Both - Age: All Ages (Number)' ordinal='23' />
+                    <column datatype='integer' name='Deaths - Diabetes mellitus - Sex: Both - Age: All Ages (Number)' ordinal='24' />
+                    <column datatype='integer' name='Deaths - Poisonings - Sex: Both - Age: All Ages (Number)' ordinal='25' />
+                    <column datatype='integer' name='Deaths - Protein-energy malnutrition - Sex: Both - Age: All Ages (Number)' ordinal='26' />
+                    <column datatype='integer' name='Terrorism (deaths)' ordinal='27' />
+                    <column datatype='integer' name='Deaths - Cardiovascular diseases - Sex: Both - Age: All Ages (Number)' ordinal='28' />
+                    <column datatype='integer' name='Deaths - Chronic kidney disease - Sex: Both - Age: All Ages (Number)' ordinal='29' />
+                    <column datatype='integer' name='Deaths - Chronic respiratory diseases - Sex: Both - Age: All Ages (Number)' ordinal='30' />
+                    <column datatype='integer' name='Deaths - Cirrhosis and other chronic liver diseases - Sex: Both - Age: All Ages (Number)' ordinal='31' />
+                    <column datatype='integer' name='Deaths - Digestive diseases - Sex: Both - Age: All Ages (Number)' ordinal='32' />
+                    <column datatype='integer' name='Deaths - Acute hepatitis - Sex: Both - Age: All Ages (Number)' ordinal='33' />
+                    <column datatype='integer' name='Deaths - Alzheimer&apos;s disease and other dementias - Sex: Both - Age: All Ages (Number)' ordinal='34' />
+                    <column datatype='integer' name='Deaths - Parkinson&apos;s disease - Sex: Both - Age: All Ages (Number)' ordinal='35' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Alternate Pareto'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Tableau Medium'>Causes of  </run>
+            <run bold='true' fontcolor='#7500b0' fontname='Tableau Medium'>&lt;[Parameters].[Parameter 1]&gt;</run>
+            <run fontname='Tableau Medium'> of the Deaths in </run>
+            <run bold='true' fontcolor='#7500b0' fontname='Tableau Medium'><![CDATA[<[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Entity:nk]> ]]></run>
+            <run>Æ&#10;</run>
+            <run fontname='Tableau Medium'>2015-2019</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/CausesofDeatharounttheWorld/AlternatePareto?rev=' id='101733860' path='/workbooks/CausesofDeatharounttheWorld' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='annual-number-of-deaths-by-cause' name='federated.1vperxc1hjvgn612cy2f9038snnc' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Pareto Adjustment' datatype='real' default-format='p0%' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='0.7'>
+              <calculation class='tableau' formula='0.7' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1vperxc1hjvgn612cy2f9038snnc'>
+            <column caption='Cumulative %' datatype='real' default-format='p0.00%' name='[Calculation1]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RUNNING_SUM(SUM([Pivot Field Values])) / TOTAL(SUM([Pivot Field Values]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Pareto Filter' datatype='boolean' name='[Calculation_1126744357916725252]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='[Calculation1] &lt;= [Parameters].[Parameter 1]'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Area' datatype='string' name='[Entity]' role='dimension' type='nominal' />
+            <column caption='Causes of Death' datatype='string' name='[Pivot Field Names (copy)_1126744357903114240]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='REPLACE(REPLACE([Pivot Field Names], &apos;Deaths -&apos;, &apos;&apos;), &apos;- Sex: Both - Age: All Ages (Number)&apos;, &apos;&apos;)' />
+            </column>
+            <column datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Death number' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='measure' type='quantitative' />
+            <column-instance column='[Entity]' derivation='None' name='[none:Entity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Names (copy)_1126744357903114240]' derivation='None' name='[none:Pivot Field Names (copy)_1126744357903114240:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation1]' derivation='User' name='[usr:Calculation1:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+            <column-instance column='[Calculation_1126744357916725252]' derivation='User' name='[usr:Calculation_1126744357916725252:nk:3]' pivot='key' type='nominal'>
+              <table-calc ordering-type='Columns' />
+              <table-calc field='[federated.1vperxc1hjvgn612cy2f9038snnc].[Calculation1]' ordering-type='Columns' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Entity:nk]'>
+            <groupfilter function='member' level='[none:Entity:nk]' member='&quot;Chad&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Year:qk]' included-values='in-range'>
+            <min>2015</min>
+            <max>2019</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation1:qk:2]' included-values='in-range'>
+            <max>0.80000000000000004</max>
+          </filter>
+          <filter class='categorical' column='[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation_1126744357916725252:nk:3]'>
+            <groupfilter function='member' level='[usr:Calculation_1126744357916725252:nk:3]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Year:qk]</column>
+            <column>[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Entity:nk]</column>
+            <column>[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation1:qk:2]</column>
+            <column>[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation_1126744357916725252:nk:3]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]' value='87' />
+            <format attr='text-format' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]' value='n#,##0,,.00M;-#,##0,,.00M' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]' value='164' />
+            <format attr='band-color' scope='rows' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]' value='12' />
+            <format attr='font-weight' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]' value='bold' />
+            <format attr='text-align' scope='cols' value='center' />
+            <format attr='vertical-align' scope='cols' value='center' />
+            <format attr='text-align' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]' value='center' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]' palette='purple_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation1:qk:2]' palette='tableau-blue-light' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]' />
+              <text column='[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Tableau Medium' fontsize='12'>&lt;</run>
+                <run fontname='Tableau Medium' fontsize='12'>[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]</run>
+                <run fontname='Tableau Medium' fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]</rows>
+        <cols>[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]</cols>
+      </table>
+      <simple-id uuid='{7E59EDF1-EAA6-426C-9615-5921483C7A49}' />
+    </worksheet>
+    <worksheet name='Alternate Pareto (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Tableau Medium'>Causes of  </run>
+            <run bold='true' fontcolor='#7500b0' fontname='Tableau Medium'>&lt;[Parameters].[Parameter 1]&gt;</run>
+            <run fontname='Tableau Medium'> of the Deaths in </run>
+            <run bold='true' fontcolor='#7500b0' fontname='Tableau Medium'><![CDATA[<[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Entity:nk]> ]]></run>
+            <run>Æ&#10;</run>
+            <run fontname='Tableau Medium'>2015-2019</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/CausesofDeatharounttheWorld/AlternatePareto2?rev=' id='101733861' path='/workbooks/CausesofDeatharounttheWorld' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='annual-number-of-deaths-by-cause' name='federated.1vperxc1hjvgn612cy2f9038snnc' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Pareto Adjustment' datatype='real' default-format='p0%' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='0.7'>
+              <calculation class='tableau' formula='0.7' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1vperxc1hjvgn612cy2f9038snnc'>
+            <column caption='Cumulative %' datatype='real' default-format='p0.00%' name='[Calculation1]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RUNNING_SUM(SUM([Pivot Field Values])) / TOTAL(SUM([Pivot Field Values]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='% Contribution' datatype='real' name='[Calculation_1126744357921943558]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([Pivot Field Values]) / TOTAL(SUM([Pivot Field Values]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Area' datatype='string' name='[Entity]' role='dimension' type='nominal' />
+            <column caption='Pareto Coloration' datatype='integer' name='[Pareto Filter (copy)_1126744357921251333]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='if [Calculation1] &lt;= [Parameters].[Parameter 1] then 1 else 0 end'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Causes of Death' datatype='string' name='[Pivot Field Names (copy)_1126744357903114240]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='REPLACE(REPLACE([Pivot Field Names], &apos;Deaths -&apos;, &apos;&apos;), &apos;- Sex: Both - Age: All Ages (Number)&apos;, &apos;&apos;)' />
+            </column>
+            <column datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Death number' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='measure' type='quantitative' />
+            <column-instance column='[Entity]' derivation='None' name='[none:Entity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Names (copy)_1126744357903114240]' derivation='None' name='[none:Pivot Field Names (copy)_1126744357903114240:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation1]' derivation='User' name='[usr:Calculation1:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+            <column-instance column='[Calculation_1126744357921943558]' derivation='User' name='[usr:Calculation_1126744357921943558:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+            <column-instance column='[Pareto Filter (copy)_1126744357921251333]' derivation='User' name='[usr:Pareto Filter (copy)_1126744357921251333:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+              <table-calc field='[federated.1vperxc1hjvgn612cy2f9038snnc].[Calculation1]' ordering-type='Columns' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Entity:nk]'>
+            <groupfilter function='member' level='[none:Entity:nk]' member='&quot;European Union&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Year:qk]' included-values='in-range'>
+            <min>2015</min>
+            <max>2019</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation1:qk:2]' included-values='in-range'>
+            <max>0.80000000000000004</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Year:qk]</column>
+            <column>[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Entity:nk]</column>
+            <column>[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation1:qk:2]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]' value='87' />
+            <format attr='text-format' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]' value='n#,##0,,.00M;-#,##0,,.00M' />
+            <format attr='text-format' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation_1126744357921943558:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]' value='164' />
+            <format attr='band-color' scope='rows' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]' value='12' />
+            <format attr='font-weight' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]' value='bold' />
+            <format attr='text-align' scope='cols' value='center' />
+            <format attr='vertical-align' scope='cols' value='center' />
+            <format attr='text-align' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]' value='center' />
+            <format attr='text-format' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation_1126744357921943558:qk]' value='' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]' palette='purple_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation1:qk:2]' palette='tableau-blue-light' type='interpolated' />
+            <encoding attr='color' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Pareto Filter (copy)_1126744357921251333:qk]' num-steps='2' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Pareto Filter (copy)_1126744357921251333:qk]' />
+              <tooltip column='[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation_1126744357921943558:qk]' />
+              <text column='[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Causes of Death:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Death number:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% Contribution along:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation_1126744357921943558:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Tableau Medium' fontsize='12'>&lt;</run>
+                <run fontname='Tableau Medium' fontsize='12'>[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]</run>
+                <run fontname='Tableau Medium' fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]</rows>
+        <cols>[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]</cols>
+      </table>
+      <simple-id uuid='{FA4C34BF-F83F-48C1-9B13-50616D059ECF}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Tableau Medium'>Æ </run>
+            <run bold='true' fontcolor='#7500b0' fontname='Tableau Medium'><![CDATA[<[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Entity:nk]> ]]></run>
+            <run fontname='Tableau Medium'>Deaths by Cause</run>
+            <run>Æ&#10;</run>
+            <run fontname='Tableau Medium'>2015-2019</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/CausesofDeatharounttheWorld/Sheet2?rev=' id='101733859' path='/workbooks/CausesofDeatharounttheWorld' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='annual-number-of-deaths-by-cause' name='federated.1vperxc1hjvgn612cy2f9038snnc' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Pareto Adjustment' datatype='real' default-format='p0%' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='0.7'>
+              <calculation class='tableau' formula='0.7' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1vperxc1hjvgn612cy2f9038snnc'>
+            <column caption='Cumulative %' datatype='real' default-format='p0.00%' name='[Calculation1]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RUNNING_SUM(SUM([Pivot Field Values])) / TOTAL(SUM([Pivot Field Values]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Pareto Filter' datatype='boolean' name='[Calculation_1126744357916725252]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='[Calculation1] &lt;= [Parameters].[Parameter 1]'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Area' datatype='string' name='[Entity]' role='dimension' type='nominal' />
+            <column caption='Causes of Death' datatype='string' name='[Pivot Field Names (copy)_1126744357903114240]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='REPLACE(REPLACE([Pivot Field Names], &apos;Deaths -&apos;, &apos;&apos;), &apos;- Sex: Both - Age: All Ages (Number)&apos;, &apos;&apos;)' />
+            </column>
+            <column datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Death number' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='measure' type='quantitative' />
+            <column-instance column='[Entity]' derivation='None' name='[none:Entity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Names (copy)_1126744357903114240]' derivation='None' name='[none:Pivot Field Names (copy)_1126744357903114240:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation1]' derivation='User' name='[usr:Calculation1:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[Calculation_1126744357916725252]' derivation='User' name='[usr:Calculation_1126744357916725252:nk:1]' pivot='key' type='nominal'>
+              <table-calc ordering-type='Rows' />
+              <table-calc field='[federated.1vperxc1hjvgn612cy2f9038snnc].[Calculation1]' ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Entity:nk]'>
+            <groupfilter function='member' level='[none:Entity:nk]' member='&quot;Chad&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Year:qk]' included-values='in-range'>
+            <min>2015</min>
+            <max>2019</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation1:qk]' included-values='in-range'>
+            <max>0.80000000000000004</max>
+          </filter>
+          <filter class='categorical' column='[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation_1126744357916725252:nk:1]'>
+            <groupfilter function='member' level='[usr:Calculation_1126744357916725252:nk:1]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Year:qk]</column>
+            <column>[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Entity:nk]</column>
+            <column>[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation1:qk]</column>
+            <column>[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation_1126744357916725252:nk:1]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]' value='17' />
+            <format attr='width' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation1:qk]' value='17' />
+            <encoding attr='space' class='0' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation1:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]' value='126' />
+            <format attr='text-format' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]' value='n#,##0,,.00M;-#,##0,,.00M' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]' value='12' />
+            <format attr='font-weight' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]' palette='purple_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation1:qk]' palette='tableau-blue-light' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]' />
+              <text column='[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Tableau Medium' fontsize='12'>&lt;</run>
+                <run fontname='Tableau Medium' fontsize='12'>[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]</run>
+                <run fontname='Tableau Medium' fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation1:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation1:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-transparency' value='57' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk] + [federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation1:qk])</rows>
+        <cols>[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]</cols>
+      </table>
+      <simple-id uuid='{559A4A13-01D4-4F98-AF36-B47F0BCBA948}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Pareto Chart'>
+      <repository-location derived-from='https://vizhub/workbooks/CausesofDeatharounttheWorld/ParetoChart?rev=' id='101733862' path='/workbooks/CausesofDeatharounttheWorld' revision='' />
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <datasources>
+        <datasource name='Parameters' />
+        <datasource caption='annual-number-of-deaths-by-cause' name='federated.1vperxc1hjvgn612cy2f9038snnc' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Pareto Adjustment' datatype='real' default-format='p0%' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='0.7'>
+          <calculation class='tableau' formula='0.7' />
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.1vperxc1hjvgn612cy2f9038snnc'>
+        <column caption='Area' datatype='string' name='[Entity]' role='dimension' type='nominal' />
+        <column-instance column='[Entity]' derivation='None' name='[none:Entity:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='7' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='97916' id='5' type-v2='layout-basic' w='87115' x='586' y='1042'>
+              <zone h='97916' id='3' name='Alternate Pareto (2)' w='87115' x='586' y='1042'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97916' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='11713' x='87701' y='1042'>
+              <zone h='7943' id='8' mode='dropdown' name='Alternate Pareto (2)' param='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Entity:nk]' type-v2='filter' w='11713' x='87701' y='1042'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9506' id='9' name='Alternate Pareto (2)' pane-specification-id='2' param='[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Pareto Filter (copy)_1126744357921251333:qk]' type-v2='color' w='11713' x='87701' y='8985'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7292' id='10' mode='type_in' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='11713' x='87701' y='18491'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='13' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone h='7943' id='8' mode='dropdown' name='Alternate Pareto (2)' param='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Entity:nk]' type-v2='filter' w='11713' x='87701' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='97916' id='3' is-fixed='true' name='Alternate Pareto (2)' w='87115' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9506' id='9' name='Alternate Pareto (2)' pane-specification-id='2' param='[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Pareto Filter (copy)_1126744357921251333:qk]' type-v2='color' w='11713' x='87701' y='8985'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7292' id='10' mode='type_in' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='11713' x='87701' y='18491'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5715D426-C9AC-4282-962D-9D0F56A030C8}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Entity:nk]' type='filter' />
+            <card pane-specification-id='2' param='[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]' type='color' />
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Entity:nk]</field>
+            <field>[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]</field>
+            <field>[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names:nk]</field>
+            <field>[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Year:qk]</field>
+            <field>[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation_1126744357916725252:nk:1]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4F4A1538-F69B-44C5-82A7-A59B7D8A999C}' />
+    </window>
+    <window class='worksheet' name='Alternate Pareto'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Entity:nk]' type='filter' />
+            <card pane-specification-id='2' param='[federated.1vperxc1hjvgn612cy2f9038snnc].[sum:Pivot Field Values:qk]' type='color' />
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Entity:nk]</field>
+            <field>[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]</field>
+            <field>[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names:nk]</field>
+            <field>[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Year:qk]</field>
+            <field>[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation1:qk:2]</field>
+            <field>[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation_1126744357916725252:nk:1]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DE5336EE-0219-49CE-8423-A30F1D5EC8F5}' />
+    </window>
+    <window class='worksheet' name='Alternate Pareto (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Entity:nk]' type='filter' />
+            <card pane-specification-id='2' param='[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Pareto Filter (copy)_1126744357921251333:qk]' type='color' />
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Entity:nk]</field>
+            <field>[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names (copy)_1126744357903114240:nk]</field>
+            <field>[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Pivot Field Names:nk]</field>
+            <field>[federated.1vperxc1hjvgn612cy2f9038snnc].[none:Year:qk]</field>
+            <field>[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation1:qk:2]</field>
+            <field>[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Calculation_1126744357916725252:nk:1]</field>
+            <field>[federated.1vperxc1hjvgn612cy2f9038snnc].[usr:Pareto Filter (copy)_1126744357921251333:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{320D082A-43ED-40BB-AD16-85B972CC0F4D}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Pareto Chart'>
+      <viewpoints>
+        <viewpoint name='Alternate Pareto (2)' />
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{7596B8C6-3A80-48AE-9F64-DF22A03ECB22}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Pareto Chart' width='192'>
+      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
+      gUajIuQP0Ns3SH5JKQHfArEkFBY6mZqYQavREA6vMDLQR2pWAZEVPzqdlkQ8RjB0Z1OfgnC7
+      bqsHKCor5sqFcyg1WrQGEwaVAk9MQqvTUVbupL17EHtGLoElD/5onFRHHtElH1qtlvziMtpa
+      29GlOIhEoqjUarSa9VfDWGRFISlup9obRtwV8v6x6WaBMjMzxaoQwoYRLUmQtU23LlAy+clZ
+      FU7Y/DZVAARho4khkCBrIgCCrIkACLImAiDImgiAIGsiAIKsiQAIsiYCIMiaCIAgayIAgqyJ
+      AAiyJgIgyJoIgCBrIgCCrIkACLImAiDImgiAIGsiAIKsiQAIsiYCIMiaCIAgayIAgqyJAAiy
+      JgIgyJoIgCBrIgCCrIkACLImAiDImgiAIGsiAIKsiQAIsiYCIMiaCIAgayIAgqyJAAiyJgIg
+      yJoIgCBrIgCCrIkACLImAiDImgiAIGsiAIKsiQAIsiYCIMiaCIAgayIAgqyJAAiyJgIgyJoI
+      gCBrIgCCrIkACLImAiDImgiAIGsiAIKsiQAIsiYCIMiaCIAgayIAgqyJAAiyJgIgyJoIgCBr
+      IgCCrIkACLImAiDImgiAIGsiAIKsiQAIsiYCIMiaCIAgayIAgqyJAAiyJgIgyJoIgCBrIgCC
+      rIkACLImAiDImgiAIGsiAIKsiQAIsvb/ABRxZwAPwIdoAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
